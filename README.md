@@ -1,3 +1,16 @@
+# Dukascopy data feed extractor
+
+dsdfe is **not** affiliated, endorsed, or vetted by Dukascopy Europe IBS AS. It's
+an open-source tool that is intended for **personal** research and educational purposes only.
+For more information regarding the terms of use refer to the legal section of the [dukascopy website](https://www.dukascopy.com/).
+
+
+## Install
+requires python >= 3.9
+```
+pip install dsdfe
+```
+
 ## Extract
 
 ```python
