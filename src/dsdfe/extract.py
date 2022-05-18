@@ -45,7 +45,6 @@ def _extract_one(symbol: str, datetime: datetime, log: str) -> tuple[datetime, b
     try:
         data = urllib.urlopen(endpoint).read()
         if data:
-            print(type(data))
             return (datetime, data)
     except Exception as e:
         logging.basicConfig(
@@ -61,7 +60,7 @@ def _create_endpoint(symbol: str, datetime: datetime) -> str:
     """
     Create datafeed endpoint \n
     format: https://www.dukascopy.com/datafeed/{SYMBOL}/{YEAR}/{MONTH}/{DAY}/{HOUR}h_ticks.bi5 \n
-    example: https://www.dukascopy.com/datafeed/EURUSD/2020/01/01/1h_ticks.bi5
+    example: https://www.dukascopy.com/datafeed/EURUSD/2020/01/01/01h_ticks.bi5
     """
     year = datetime.year
     month = f"{datetime.month-1:02}"
