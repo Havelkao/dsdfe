@@ -1,6 +1,4 @@
 # Dukascopy data feed extractor
-[![Downloads](https://static.pepy.tech/badge/dsdfe)](https://pepy.tech/project/dsdfe)
-[![Downloads](https://static.pepy.tech/badge/dsdfe/month)](https://pepy.tech/project/dsdfe)
 
 dsdfe helps you extract tick data from the dukascopy feed. This sophisticated tool merges the numerous bi5 files into a single one while preserving the datetime data in a separate csv file.
 
@@ -39,9 +37,3 @@ csv = 'out/EURUSD_20210101_20210104.csv'
 
 df = dsdfe.transform(bi5, csv)
 ```
-
-## Contribute
-Apparently there are actual people using this tool. 
-There is definitely room for improvement, so feel free to open an issue or a PR. 
-
-Cheers!
